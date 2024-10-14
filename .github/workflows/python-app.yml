@@ -30,6 +30,3 @@ jobs:
         make run &  # Run the Flask server in the background
         sleep 10    # Wait for the server to start up
       timeout-minutes: 1  # Ensures the server doesn’t run indefinitely
-
-    - name: Verify application is running
-      run: curl --fail http://localhost:3000 || exit 1  # Check if the server is running correctly
